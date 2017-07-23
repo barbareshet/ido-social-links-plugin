@@ -6,10 +6,10 @@ function islp_add_footer($content){
     
     $footer_output = '<hr class="divider">';
     $footer_output .= '<div class="footer_social_links">';
-    $footer_output .= '<h4>'.  __('Get Social With Us', 'csl_domain') . '</h4>';
-    $footer_output .= '<ul id="islp-footer-links-list">';
+    $footer_output .= '<h4>'.  __('Get Social With Me', 'csl_domain') . '</h4>';
+    $footer_output .= '<ul id="islp-footer-links-list" class="list-inline">';
     if(!empty($islp_options['facebook_url'])){
-       $footer_output .= '<li class="social-link" id="facebook"><a href="'. $islp_options['facebook_url'] .'" target="_blank"><i class="fa fa-facebook"></i></a></li>'; 
+       $footer_output .= '<li class="social-link" id="facebook"><a href="'. $islp_options['facebook_url'] .'" target="_blank"><i class="fa fa-facebook"></i></a></li>';
     }
         if(!empty($islp_options['twitter_url'])){
         $footer_output .= '<li class="social-link" id="twitter"><a href="'. $islp_options['twitter_url'] .'" target="_blank"><i class="fa fa-twitter"></i></a></li>'; 
