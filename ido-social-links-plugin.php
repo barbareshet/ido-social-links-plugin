@@ -49,7 +49,7 @@ if ( is_admin()){
     require_once ( plugin_dir_path(__FILE__) . '/inc/ido-social-links-plugin-settings.php');
 }
 
-function plugin_add_settings_link( $links ) {
+function islp_plugin_add_settings_link( $links ) {
 	$settings_link = '<a href="'.admin_url('admin.php').'?page=islp-options">' . __( 'Settings', 'islp_domain' ) . '</a>';
 	array_push( $links, $settings_link );
 	return $links;
