@@ -3,7 +3,7 @@
 /**
  * Plugin name: Simple Social Links Plugin
  * Description: Simple Social links Plugin
- * Version: 2.1
+ * Version: 2.2
  * Author: Ido Barnea
  * Author URI: https://www.barbareshet.co.il
  * Plugin Site: https://github.com/barbareshet/ido-social-links-plugin/
