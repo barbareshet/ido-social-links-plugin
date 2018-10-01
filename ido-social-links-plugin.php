@@ -55,7 +55,7 @@ function islp_plugin_add_settings_link( $links ) {
 	return $links;
 }
 $plugin = plugin_basename( __FILE__ );
-add_filter( "plugin_action_links_$plugin", 'plugin_add_settings_link' );
+add_filter( "plugin_action_links_$plugin", 'islp_plugin_add_settings_link' );
 
 //Register the shortcode
 add_action('init', 'islp_register_shortcode');
