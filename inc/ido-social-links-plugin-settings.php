@@ -1,5 +1,7 @@
 <?php
-
+if (!defined('ABSPATH')){
+	exit;
+}
 
 
 // Create the Menu link

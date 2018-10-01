@@ -1,5 +1,7 @@
 <?php
-
+if (!defined('ABSPATH')){
+	exit;
+}
 
     
     global $islp_options;

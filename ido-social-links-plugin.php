@@ -21,6 +21,11 @@ function islp_load_textdomain() {
 }
 add_action( 'plugins_loaded', 'islp_load_textdomain' );
 
+
+//1.1 register activation
+require_once ( plugin_dir_path(__FILE__) . '/inc/ido-social-links-plugin-activation.php');
+
+register_activation_hook( __FILE__, 'islp_plugin_activation' );
 //Global options var
 
 $islp_options = get_option('islp_settings');

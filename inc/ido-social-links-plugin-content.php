@@ -1,5 +1,7 @@
 <?php
-
+if (!defined('ABSPATH')){
+	exit;
+}
 function islp_add_footer( $content ){
     
     global $islp_options;
