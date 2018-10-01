@@ -13,28 +13,99 @@ and open the template in the editor.
  * g+ color: #db4b39
  * yelp color : #C41200
  */
-#csl-footer-links-list{
+.footer_social_links{
+
+}
+.footer_social_links h4{
+
+}
+#islp-footer-links-list{
     list-style-type: none;
     
 }
-.csl-footer-links ul li{display: inline-block; float: left;}
-.csl-footer-links ul li:after{content: " | ";}
-.csl-footer-links ul li:last-child:after{content:"";}
-.csl-footer-links li.social-link a{box-shadow:none;}
-i.fa{
-    padding: 10px;
-    border-radius: 5px;
-    
+#islp-footer-links-list .social-link{
+    display: inline-block;
+    float: left;
 }
 
-#facebook .fa-facebook{color: #3b5998;}
-#facebook .fa-facebook:hover{background:#3b5998;color:#fff;}
+#islp-footer-links-list .social-link a i.fa{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#islp-footer-links-list .social-link a{
+    box-shadow: none;
+}
+#islp-footer-links-list .social-link#facebook .fa-facebook{
+    color: #3b5998;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#islp-footer-links-list .social-link#facebook .fa-facebook:hover{
+    background:#3b5998;
+    color:#fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
-#twitter .fa-twitter{color: #55acee;}
-#twitter .fa-twitter:hover{background:#55acee;color:#fff;}
+#islp-footer-links-list .social-link#twitter .fa-twitter{
+    color: #55acee;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#islp-footer-links-list .social-link#twitter .fa-twitter:hover {
+    background:#55acee;
+    color:#fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
-#google .fa-google-plus{color: #db4b39;}
-#google .fa-google-plus:hover{background:#db4b39;color:#fff;}
+#islp-footer-links-list .social-link#google .fa-google-plus{
+    color: #db4b39;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#islp-footer-links-list .social-link#google .fa-google-plus:hover{
+    background:#db4b39;
+    color:#fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
-#yelp .fa-yelp{color: #C41200;}
-#yelp .fa-yelp:hover{background:#C41200;color:#fff;}
+#islp-footer-links-list .social-link#yelp .fa-yelp{
+    color: #C41200;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#islp-footer-links-list .social-link#yelp .fa-yelp:hover{
+    background:#C41200;
+    color:#fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}

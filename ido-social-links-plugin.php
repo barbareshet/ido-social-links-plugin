@@ -1,13 +1,14 @@
 <?php
 
 /**
- * Plugin name: Ido Social Links Plugin
- * Description: Social links Plugin
- * Version: 1.0
+ * Plugin name: Simple Social Links Plugin
+ * Description: Simple Social links Plugin
+ * Version: 2.0
  * Author: Ido Barnea
- * Author URI: http://idowebservices.com
- * Plugin Site: idowebservices.com
- * 
+ * Author URI: https://www.barbareshet.co.il
+ * Plugin Site: https://github.com/barbareshet/ido-social-links-plugin/
+ * Text Domain: islp_domain
+ * Domain Path: /languages
  **/
 
 //Exit if accessed directly
@@ -15,17 +16,46 @@ if (!defined('ABSPATH')){
     exit;
 }
 
+function islp_load_textdomain() {
+	load_plugin_textdomain( 'islp_domain', false, basename( dirname( __FILE__ ) ) . '/languages' );
+}
+add_action( 'plugins_loaded', 'islp_load_textdomain' );
+
 //Global options var
 
 $islp_options = get_option('islp_settings');
 
 //Load scripts
-require_once (plugin_dir_path(__FILE__) . '/inc/ido-social-links-plugin-scripts.php');
+require_once ( plugin_dir_path(__FILE__) . '/inc/ido-social-links-plugin-scripts.php');
 
 //Load Content
-require_once (plugin_dir_path(__FILE__) . '/inc/ido-social-links-plugin-content.php');
+require_once ( plugin_dir_path(__FILE__) . '/inc/ido-social-links-plugin-content.php');
 
 //Load Settings only if on the admin side
-if (is_admin()){
-    require_once (plugin_dir_path(__FILE__) . '/inc/ido-social-links-plugin-settings.php');
+if ( is_admin()){
+    require_once ( plugin_dir_path(__FILE__) . '/inc/ido-social-links-plugin-settings.php');
+}
+
+function plugin_add_settings_link( $links ) {
+	$settings_link = '<a href="'.admin_url('admin.php').'?page=islp-options">' . __( 'Settings', 'islp_domain' ) . '</a>';
+	array_push( $links, $settings_link );
+	return $links;
+}
+$plugin = plugin_basename( __FILE__ );
+add_filter( "plugin_action_links_$plugin", 'plugin_add_settings_link' );
+
+//Register the shortcode
+add_action('init', 'islp_register_shortcode');
+
+//Schema Customizer
+function islp_register_shortcode( ){
+
+	add_shortcode('islp','islp_content' );
+}
+
+function islp_content($args, $content = null){
+
+	ob_start();
+	require_once ( plugin_dir_path(__FILE__) . '/inc/ido-social-links-plugin-shortcode-content.php');
+	return ob_get_clean();
 }
