@@ -3,7 +3,7 @@
 /**
  * Plugin name: Simple Social Links Plugin
  * Description: Simple Social links Plugin
- * Version: 2.0
+ * Version: 2.1
  * Author: Ido Barnea
  * Author URI: https://www.barbareshet.co.il
  * Plugin Site: https://github.com/barbareshet/ido-social-links-plugin/
@@ -11,16 +11,18 @@
  * Domain Path: /languages
  **/
 
-function my_plugin_deactivation() {
-// Welp, I've been deactivated - are there some things I should clean up?
-}
-define ( 'ISLP_PLUGIN_VERSION', '2.0.0');
-
 
 //Exit if accessed directly
 if (!defined('ABSPATH')){
     exit;
 }
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/barbareshet/ido-social-links-plugin/',
+	__FILE__,
+	'islp-options'
+);
+$myUpdateChecker->setBranch('stable');
 
 function islp_load_textdomain() {
 	load_plugin_textdomain( 'islp_domain', false, basename( dirname( __FILE__ ) ) . '/languages' );
