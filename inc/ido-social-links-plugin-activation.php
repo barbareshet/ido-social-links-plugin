@@ -31,4 +31,7 @@ function islp_plugin_activation() {
 			. '</p> <a href="' . admin_url( 'plugins.php' ) . '">' . __( 'go back', 'islp_domain' ) . '</a>'
 		);
 	}
+
+
+
 }

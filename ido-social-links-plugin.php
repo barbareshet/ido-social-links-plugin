@@ -11,6 +11,12 @@
  * Domain Path: /languages
  **/
 
+function my_plugin_deactivation() {
+// Welp, I've been deactivated - are there some things I should clean up?
+}
+define ( 'ISLP_PLUGIN_VERSION', '2.0.0');
+
+
 //Exit if accessed directly
 if (!defined('ABSPATH')){
     exit;
