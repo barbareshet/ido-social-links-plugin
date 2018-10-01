@@ -109,3 +109,20 @@ and open the template in the editor.
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+#islp-footer-links-list .social-link#instagram .fa-instagram{
+    color: #8a3ab9;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#islp-footer-links-list .social-link#instagram .fa-instagram:hover{
+    background: #8a3ab9;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}

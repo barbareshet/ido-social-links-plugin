@@ -19,8 +19,8 @@ function islp_options_content(){
 // init global variable for options
 
 global $islp_options;
-	$islp_options[ 'enable'] = empty( $islp_options[ 'enable'] ) ? 0 : 1;
-	$islp_options[ 'show_in_feed'] = empty( $islp_options[ 'show_in_feed'] ) ? 0 : 1;
+	$islp_options[ 'enable']        = empty( $islp_options[ 'enable'] )         ? 0 : 1;
+	$islp_options[ 'show_in_feed']  = empty( $islp_options[ 'show_in_feed'] )   ? 0 : 1;
     ob_start();?>
 
     <div class="wrap">
@@ -176,6 +176,43 @@ global $islp_options;
                         </tr>
 
                         <!--/ Twitter  link settings-->
+                        <tr>
+                            <th>
+                                <h3>
+                                    <i class="dashicons dashicons-camera"></i>
+		                            <?php echo _e('Instagram Settings', 'islp_domain') ;?>
+                                </h3>
+                            </th>
+                            <td>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="islp_settings[instagram_url]">
+                                            <?php _e('Instagram Profile URL', 'islp_domain') ;?>
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="islp_settings[instagram_url]" value="<?php echo $islp_options['instagram_url'] ;?>" id="islp_settings[instagram_url]" class="regular-text" />
+                                        <p class="description">
+                                            <?php _e('Instagram Profile URL', 'islp_domain');?>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+
+                                        <label for="islp_settings[instagram_link_color]">
+                                            <?php _e('Instagram Page Link Color', 'islp_domain') ;?>
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="islp_settings[instagram_link_color]" value="<?php echo $islp_options['instagram_link_color'] ;?>" id="islp_settings[instagram_link_color]" class="regular-text" />
+                                        <p class="description">
+                                            <?php _e('Enter Instagram Link Color or HEX value with #', 'islp_domain');?>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </td>
+                        </tr>
                         <tr>
                             <th scope="row">
                                 <h3>

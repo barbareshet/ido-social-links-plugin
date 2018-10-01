@@ -5,9 +5,10 @@ if (!defined('ABSPATH')){
 
     
     global $islp_options;
-    $facebook_link_color = $islp_options['facebook_link_color'];
-    $twitter_link_color = $islp_options['twitter_link_color'];
-    $google_plus_link_color = $islp_options['google_plus_link_color']
+    $facebook_link_color    = $islp_options['facebook_link_color'];
+    $twitter_link_color     = $islp_options['twitter_link_color'];
+    $google_plus_link_color = $islp_options['google_plus_link_color'];
+    $instagram_link_color   = $islp_options['instagram_link_color'];
 	    ?>
     <hr class="divider">
     <div class="footer_social_links">
@@ -32,6 +33,13 @@ if (!defined('ABSPATH')){
 	       <a href="<?php echo $islp_options['google_plus_url'];?>" target="_blank">
 		       <i class="fa fa-google-plus" style="color:<?php echo $google_plus_link_color;?>"></i>
 	       </a>
+       </li>
+   <?php }
+   if( !empty($islp_options['instagram_url'])){ ?>
+       <li class="social-link" id="instagram">
+           <a href="<?php echo $islp_options['instagram_url'];?>" target="_blank">
+               <i class="fa fa-instagram" style="color:<?php echo $instagram_link_color;?>"></i>
+           </a>
        </li>
    <?php } ?>
 

@@ -5,11 +5,12 @@ if (!defined('ABSPATH')){
 function islp_add_footer( $content ){
     
     global $islp_options;
-	$islp_options[ 'enable'] = empty( $islp_options[ 'enable'] ) ? 0 : 1;
-	$islp_options[ 'show_in_feed'] = empty( $islp_options[ 'show_in_feed'] ) ? 0 : 1;
-    $facebook_link_color = $islp_options['facebook_link_color'];
-    $twitter_link_color = $islp_options['twitter_link_color'];
-    $google_plus_link_color = $islp_options['google_plus_link_color'];
+	$islp_options[ 'enable']        = empty( $islp_options[ 'enable'] ) ? 0 : 1;
+	$islp_options[ 'show_in_feed']  = empty( $islp_options[ 'show_in_feed'] ) ? 0 : 1;
+    $facebook_link_color            = $islp_options['facebook_link_color'];
+    $twitter_link_color             = $islp_options['twitter_link_color'];
+    $google_plus_link_color         = $islp_options['google_plus_link_color'];
+	$instagram_link_color           = $islp_options['instagram_link_color'];
     $footer_output = '<hr class="divider">';
     $footer_output .= '<div class="footer_social_links">';
     $footer_output .= '<h4>'.  __('Get Social With Us', 'islp_domain') . '</h4>';
@@ -35,7 +36,13 @@ function islp_add_footer( $content ){
 							'</a>'.
 							'</li>';
    }
-
+	if( !empty($islp_options['instagram_url'])){
+		$footer_output .=    '<li class="social-link" id="instagram">'.
+		                     '<a href="'. $islp_options['instagram_url'] .'" target="_blank">'.
+		                     '<i class="fa fa-instagram" style="color:'.$instagram_link_color.'"></i>'.
+		                     '</a>'.
+		                     '</li>';
+	}
     $footer_output .= '</ul>';
     $footer_output .= '</div>';
     
