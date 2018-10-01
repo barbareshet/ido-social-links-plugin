@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Simple Social Links Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-01 13:12+0000\n"
+"POT-Creation-Date: 2018-10-01 17:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,53 +14,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: inc/ido-social-links-plugin-settings.php:36
+#: inc/ido-social-links-plugin-settings.php:224
+msgid ""
+"Copy this short code to show social links on your sidebar area <code>[islp]"
+"</code>"
+msgstr ""
+
+#: inc/ido-social-links-plugin-settings.php:39
 msgid "Enable Social Links"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:42
+#: inc/ido-social-links-plugin-settings.php:58
+msgid "Enable Social Links both in single posts and feed"
+msgstr ""
+
+#: inc/ido-social-links-plugin-settings.php:45
 msgid "Enable Social links on pages and posts"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:75
+#: inc/ido-social-links-plugin-settings.php:93
 msgid "Enter Facebook Link Color or HEX value with #"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:120
+#: inc/ido-social-links-plugin-settings.php:131
 msgid "Enter google_plus page Link Color or HEX value with #"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:167
+#: inc/ido-social-links-plugin-settings.php:210
+msgid "Enter Instagram Link Color or HEX value with #"
+msgstr ""
+
+#: inc/ido-social-links-plugin-settings.php:170
 msgid "Enter Twitter page Link Color or HEX value with #"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:69
+#: inc/ido-social-links-plugin-settings.php:87
 msgid "Facebook Link Color"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:55
-#: inc/ido-social-links-plugin-settings.php:61
+#: inc/ido-social-links-plugin-settings.php:74
+#: inc/ido-social-links-plugin-settings.php:80
 msgid "Facebook Page URL"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:48
+#: inc/ido-social-links-plugin-settings.php:66
 msgid "Facebook Settings"
 msgstr ""
 
-#: inc/ido-social-links-plugin-content.php:9
+#: inc/ido-social-links-plugin-content.php:16
+#: inc/ido-social-links-plugin-shortcode-content.php:15
 msgid "Get Social With Us"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:114
+#: inc/ido-social-links-plugin-activation.php:19
+#: inc/ido-social-links-plugin-activation.php:31
+msgid "go back"
+msgstr ""
+
+#: inc/ido-social-links-plugin-settings.php:125
 msgid "Google Business Page Link Color"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:100
-#: inc/ido-social-links-plugin-settings.php:106
+#: inc/ido-social-links-plugin-settings.php:111
+#: inc/ido-social-links-plugin-settings.php:117
 msgid "Google Business Page URL"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:93
+#: inc/ido-social-links-plugin-settings.php:103
 msgid "Google Plus Settings"
 msgstr ""
 
@@ -72,25 +92,36 @@ msgstr ""
 msgid "Ido Barnea"
 msgstr ""
 
+#: inc/ido-social-links-plugin-settings.php:204
+msgid "Instagram Page Link Color"
+msgstr ""
+
 #: inc/ido-social-links-plugin-settings.php:190
+#: inc/ido-social-links-plugin-settings.php:196
+msgid "Instagram Profile URL"
+msgstr ""
+
+#: inc/ido-social-links-plugin-settings.php:183
+msgid "Instagram Settings"
+msgstr ""
+
+#: inc/ido-social-links-plugin-settings.php:232
 msgid "Save Changes"
 msgstr ""
 
-#: ido-social-links-plugin.php:40
+#: ido-social-links-plugin.php:45
 msgid "Settings"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:26
+#: inc/ido-social-links-plugin-settings.php:29
 msgid "Settings For the Simple Social Links Plugin"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:82
-#: inc/ido-social-links-plugin-settings.php:127
-#: inc/ido-social-links-plugin-settings.php:174
+#: inc/ido-social-links-plugin-settings.php:52
 msgid "Show in Posts Feed"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:24
+#: inc/ido-social-links-plugin-settings.php:27
 msgid "Simple Social Links"
 msgstr ""
 
@@ -102,15 +133,34 @@ msgstr ""
 msgid "Simple Social links Plugin"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:161
+#: inc/ido-social-links-plugin-settings.php:219
+msgid "Social Links Short code"
+msgstr ""
+
+#: inc/ido-social-links-plugin-activation.php:16
+#, php-format
+msgid ""
+"This plugin can not be activated because it requires a PHP version greater "
+"than %1$s. Your PHP version can be updated by your hosting company."
+msgstr ""
+
+#: inc/ido-social-links-plugin-activation.php:28
+#, php-format
+msgid ""
+"This plugin can not be activated because it requires a WordPress version "
+"greater than %1$s. Please go to Dashboard &#9656; Updates to gran the latest "
+"version of WordPress ."
+msgstr ""
+
+#: inc/ido-social-links-plugin-settings.php:164
 msgid "Twitter Page Link Color"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:147
-#: inc/ido-social-links-plugin-settings.php:153
+#: inc/ido-social-links-plugin-settings.php:150
+#: inc/ido-social-links-plugin-settings.php:156
 msgid "Twitter Profile URL"
 msgstr ""
 
-#: inc/ido-social-links-plugin-settings.php:140
+#: inc/ido-social-links-plugin-settings.php:142
 msgid "Twitter Settings"
 msgstr ""
